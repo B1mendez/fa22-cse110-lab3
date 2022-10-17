@@ -5,111 +5,139 @@
   <meta charset="utf-8">
   <title>Meeting Minutes</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <section>
-      <h1>Meeting Minutes</h1>
+    <section id="home">
+      <h1>
+        <a href="#">Meeting Minutes</a></h1>
     </section>
   </header>
   <main>
     <section>
-      <h2>Meeting Topic: Brainstorming, check-ins, documentation</h2>
-      <h3>October 10, 2022 || 1:30pm-2:00pm</h3>
+      <h3 class="date">October 10, 2022 || 1:30pm-2:00pm</h3>
+      <h2 class="title">Meeting Topic: <span>Brainstorming, check-ins, documentation </span> </h2>
     </section>
-    <hr>
-    <section>
+    <section id="attendance">
       <h2>Attendance List</h2>
-      <ul>
-        <li>Brian (Team Leader)</li>
-        <li>Krish (Team Leader)</li>
-        <li>Alex (TBD)</li>
-        <li>Demi (TBD)</li>
-        <li>Nikhil (TBD)</li>
-      </ul>
+      <ol>
+        <li>
+          <input type="checkbox"> Brian (Team Leader)
+        </li>
+        <li>
+          <input type="checkbox"> Krish (Team Leader)
+        </li>
+        <li>
+          <input type="checkbox"> Jinwoong (Planner)
+        </li>
+        <li>
+          <input type="checkbox"> Goldie (Designer)
+        </li>
+        <li>
+          <input type="checkbox"> Nikhil (Back End Developer)
+        </li>
+        <li>
+          <input type="checkbox"> Takuro (Back End Developer)
+        </li>
+        <li>
+          <input type="checkbox"> Maggie (Front End Developer)
+        </li>
+        <li>
+          <input type="checkbox"> Rishegesh(Front End Developer)
+        </li>
+        <li>
+          <input type="checkbox">Alex (Agile Developer)
+        </li>
+        <li>
+          <input type="checkbox"> Demi (Agile Developer)
+        </li>
+      </ol>
     </section>
-    <hr>
     <section>
       <h2>Todays Agenda...</h2>
       <h3>Welcoming statements and introductions. Assigning Roles</h3>
       <div>
-        <h4>New Business:</h4>
-        <p>Everyone in the meeting will start off with an introduction to themselves and a list of previous cs related experiences.</p>
+        <h4> <u>New Business: </u></h4>
+        <p class="spacing">Everyone in the meeting will start off with an introduction to themselves and a list of previous cs related experiences.</p>
       </div>
       <div>
-        <h4>Old Business:</h4>
-        <p>Nothing to discuss here since it is our first meeting</p>
+        <h4><u>Old Business: </u></h4>
+        <p class="spacing">Nothing to discuss here since it is our first meeting</p>
       </div>
     </section>
     <section>
-      <h4>Questions or concerns?</h4>
+      <h4><u>Questions or concerns?</u></h4>
       <ol>
         <li>TBD</li>
       </ol>
     </section>
     <hr>
-    <section>
+    <section id="center">
       <h2>Why Have A Meeting? </h2>
-        <p>The flow charts illustrates how meetings get assigned when collaborating on assignments</p>
-        <img src="FlowChart.PNG" alt="Why Have a Meeting" width="1000" height="500">
+      <p style="margin-bottom: 10px">The flow charts illustrates how meetings get assigned when collaborating on assignments</p>
+      <img src="FlowChart.PNG" alt="Why Have a Meeting" width="1000" height="500">
     </section>
-    <section>
+    <section id="center">
       <h4>Audio Recording</h4>
       <audio controls>
-       <source src="audio1939946178.m4a" type="audio/mpeg">
+        <source src="audio1939946178.m4a" type="audio/mpeg">
       </audio>
       <h4>Video Recording</h4>
       <video width="320" height="240" controls>
-       <source src="video1939946178.mp4" type="video/mp4">
+        <source src="video1939946178.mp4" type="video/mp4">
       </video>
-     </section>
-     <section>
-       <h4>Meeting Evaluation</h4>
-       <table>
-         <tr>
-           <th class="first-col"></th>
-           <th>Very Satisfied</th>
-           <th>Satisfied</th>
-           <th>Decent</th>
-           <th>Unsatisfied</th>
-         </tr>
-         <tr>
-           <td class="first-col">Productive</td>
-           <td><input type="radio" value="none" name="Productive" /></td>
-           <td><input type="radio" value="none" name="Productive" /></td>
-           <td><input type="radio" value="none" name="Productive" /></td>
-           <td><input type="radio" value="none" name="Productive" /></td>
-         </tr>
-         <tr>
-           <td class="first-col">Clear Instructions</td>
-           <td><input type="radio" value="none" name="Clear" /></td>
-           <td><input type="radio" value="none" name="Clear" /></td>
-           <td><input type="radio" value="none" name="Clear" /></td>
-           <td><input type="radio" value="none" name="Clear" /></td>
-         </tr>
-         <tr>
-           <td class="first-col">Length of Meeting</td>
-           <td><input type="radio" value="none" name="Length" /></td>
-           <td><input type="radio" value="none" name="Length" /></td>
-           <td><input type="radio" value="none" name="Length" /></td>
-           <td><input type="radio" value="none" name="Length" /></td>
-         </tr>
-         <tr>
-           <td class="first-col">Overall Experience</td>
-           <td><input type="radio" value="none" name="Experience" /></td>
-           <td><input type="radio" value="none" name="Experience" /></td>
-           <td><input type="radio" value="none" name="Experience" /></td>
-           <td><input type="radio" value="none" name="Experience" /></td>
-         </tr>
-       </table>
-       <h4>Any comments, questions or suggestions?</h4>
-       <textarea rows="5"></textarea>
-       <div class="btn-block">
-         <button type="submit">Send Feedback</button>
-       </div>
+    </section>
+    <section class="evaluation">
+      <h4>Meeting Evaluation</h4>
+      <table>
+        <tr>
+          <th class="first-col"></th>
+          <th>Very Satisfied</th>
+          <th>Satisfied</th>
+          <th>Decent</th>
+          <th>Unsatisfied</th>
+        </tr>
+        <tr>
+          <td class="first-col">Productive</td>
+          <td><input type="radio" value="none" name="Productive" /></td>
+          <td><input type="radio" value="none" name="Productive" /></td>
+          <td><input type="radio" value="none" name="Productive" /></td>
+          <td><input type="radio" value="none" name="Productive" /></td>
+        </tr>
+        <tr>
+          <td class="first-col">Clear Instructions</td>
+          <td><input type="radio" value="none" name="Clear" /></td>
+          <td><input type="radio" value="none" name="Clear" /></td>
+          <td><input type="radio" value="none" name="Clear" /></td>
+          <td><input type="radio" value="none" name="Clear" /></td>
+        </tr>
+        <tr>
+          <td class="first-col">Length of Meeting</td>
+          <td><input type="radio" value="none" name="Length" /></td>
+          <td><input type="radio" value="none" name="Length" /></td>
+          <td><input type="radio" value="none" name="Length" /></td>
+          <td><input type="radio" value="none" name="Length" /></td>
+        </tr>
+        <tr>
+          <td class="first-col">Overall Experience</td>
+          <td><input type="radio" value="none" name="Experience" /></td>
+          <td><input type="radio" value="none" name="Experience" /></td>
+          <td><input type="radio" value="none" name="Experience" /></td>
+          <td><input type="radio" value="none" name="Experience" /></td>
+        </tr>
+      </table>
+      <h4>Any comments, questions or suggestions?</h4>
+      <textarea rows="5"></textarea>
+      <div class="btn-block">
+        <button type="submit">Send Feedback</button>
+      </div>
 
-     </section>
+    </section>
   </main>
 </body>
+
 </html>
