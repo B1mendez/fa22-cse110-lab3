@@ -1,1 +1,181 @@
+/*
+  Media Query for detailed hover action
+*/
+@media (hover: hover) {
+    details:hover{
+        background-color: #F8f8f8;
+    }
+}
+/*
+  Universal Selector to keep fonts the same
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Silkscreen', cursive;
+  scroll-behavior: smooth;
+  background-color: #FFFDD0;
+}
+
+/*
+  Element Selector for h1 headers
+*/
+h1 {
+  text-align: center;
+  font-size: 4.5rem;
+  margin-top: 80px auto;
+  opacity: 1;
+  font-weight: 400;
+  padding: 20px;
+}
+
+/*
+  Element Selector for h2 headers
+*/
+h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 20px;
+}
+
+h4 {
+  font-size: 1.0rem;
+  margin-top: 80px auto;
+  font-weight: 400;
+  padding: 20px;
+}
+
+ol li {
+  list-style: none;
+  position: relative;
+  text-decoration: none;
+  padding: 0.2em 1.1em;
+  border-right: 1px solid rgba(255, 255, 255, 0.8);
+  margin: 0 0 0 20px;
+}
+
+ol li::before {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+}
+
+/*
+  class selector to modify the date
+*/
+.date {
+  background: #F7C873;
+  color: #f8f8f8;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 12px;
+  letter-spacing: 1px;
+  padding: 10px 15px 8px;
+  text-transform: uppercase;
+  text-align: left;
+  float: right;
+  border-style: dotted;
+  position: relative;
+}
+
+/*
+  Background color for Header and
+  selection id selectors
+*/
+#home {
+  background-color: #F7C873;
+}
+
+#attendance {
+  margin: 20px 5px 20px 5px;
+  margin-bottom: 20px;
+  border: 5px solid #f7c873;
+  border-radius: 1.0em;
+  text-align: left;
+}
+
+#center {
+  align-items: center;
+  display: center;
+  text-align: center;
+  margin: 25px 0 25px 0;
+}
+
+/*
+  Class Selector for evaluation form
+*/
+.evaluation {
+  align-items: center;
+  display: center;
+  text-align: center;
+  margin: 0 5px 5px 5px;
+  border-style: dashed;
+  border: 2px dashed #f7c873;
+}
+
+/*
+  Title hover psuedo-class
+*/
+.title:hover {
+  color:red;
+  font-size: 25px;
+}
+
+/*
+  Paragraph Combining two selectors
+*/
+p.spacing {
+  margin-left: 50px;
+
+}
+
+/*
+  Selector List
+*/
+table, th, td {
+  border: 1px solid;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  width:100px;
+  background: hsl(50 80% 40%);
+
+}
+
+/*
+  General sibling combinator
+*/
+ol~ul{
+    text-transform: uppercase;
+}
+
+/*
+  Attribute Selector
+*/
+a[title] {
+  color: red;
+  position: inherit;
+}
+
+/*
+  Adjacent sibling combinator
+*/
+h2 + h3 {
+  margin-top: 80px auto;
+}
+
+/*
+  Child combinator
+*/
+ol > ul {
+  text-align: inherit;
+}
 
